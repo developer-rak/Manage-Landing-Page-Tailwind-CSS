@@ -3,30 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind.config.js"></script>
-  <title>Manage Landing Page</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        screen: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px'
+        },
+      extend: {
+          colors: {
+            brightRed: 'hsl(12, 88%, 59%)',
+            brightRedLight: 'hsl(12, 88%, 69%)',
+            brightRedSupLight: 'hsl(12, 88%, 95%)',
+            darkBlue: 'hsl(228, 39%, 23%)',
+            darkGrayishBlue: 'hsl(227, 12%, 61%)',
+            veryDarkBlue: 'hsl(223, 12%, 13%)',
+            veryPaleRed: 'hsl(13, 100%, 96%)',
+            veryLightGray: 'hsl(0, 0%, 98%)',
+          },
+        },
+      },
+    }
+  </script>
 </head>
 <body>
-    <!-- ----------NAVBAR---------- -->
-    <nav class="ralative container mx-auto p-6">
-        <!-- FLEX CONTAINER -->
-        <div class="flex items-center justify-between">
-            <!-- LOGO -->
-            <div class="pt-2">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <!-- MENU ITEMS -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-[rgba(12, 88%, 59%)]">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Community</a>
-            </div>
-        </div>
-    </nav>
-    <!-- ----------NAVBAR END---------- -->
+  <h1 class="text-3xl font-bold underline hover:text-brightRed">
+    Hello world!
+  </h1>
 </body>
 </html>
