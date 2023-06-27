@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
   <title>Manage Landing Page</title>
 </head>
 <body>
@@ -14,6 +16,14 @@
             <!-- LOGO -->
             <div class="pt-2">
                 <img src="img/logo.svg" alt="">
+            </div>
+            <!-- MENU ITEMS -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-[rgba(12, 88%, 59%)]">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
             </div>
         </div>
     </nav>
